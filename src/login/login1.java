@@ -14,7 +14,7 @@ public class login1 extends javax.swing.JFrame {
 
 // hello brotherrr this is in github
     
-// hii this is netbeans    
+// hii this is netbeanss    
     
     
     /**
