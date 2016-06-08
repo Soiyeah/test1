@@ -18,6 +18,8 @@ public class login1 extends javax.swing.JFrame {
     
     //gghhh
     
+    //2
+    
     /**
      * Creates new form login1
      */
