@@ -26,6 +26,8 @@ public class login1 extends javax.swing.JFrame {
     
     //5
     
+    //6
+    
     /**
      * Creates new form login1
      */
