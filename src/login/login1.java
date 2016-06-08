@@ -112,6 +112,7 @@ public class login1 extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         side_panel.setVisible(false); 
         
+        // hello bro
         
     }//GEN-LAST:event_formWindowOpened
 
