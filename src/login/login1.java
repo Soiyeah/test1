@@ -5,6 +5,8 @@
  */
 package login;
 
+import java.awt.Color;
+
 /**
  *
  * @author Soiyeah
@@ -12,20 +14,7 @@ package login;
 public class login1 extends javax.swing.JFrame {
 
 
-// hello brotherrr this is in github
 
-  
-    
-    //gghhh
-    
-    //2
-    
-    //3
-    
-    //4
-    
-    //5
-    
     /**
      * Creates new form login1
      */
@@ -44,10 +33,12 @@ public class login1 extends javax.swing.JFrame {
 
         side_panel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        text_field = new javax.swing.JTextField();
-        btn1 = new javax.swing.JButton();
+        prg = new javax.swing.JProgressBar();
+        btn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
+        setMinimumSize(new java.awt.Dimension(1200, 500));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -65,19 +56,22 @@ public class login1 extends javax.swing.JFrame {
         );
         side_panelLayout.setVerticalGroup(
             side_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 411, Short.MAX_VALUE)
+            .addGap(0, 470, Short.MAX_VALUE)
         );
 
-        getContentPane().add(side_panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, -1));
+        getContentPane().add(side_panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 470));
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
-        text_field.setText("jTextField1");
+        prg.setBackground(new java.awt.Color(102, 204, 255));
+        prg.setForeground(new java.awt.Color(102, 0, 102));
+        prg.setValue(20);
+        prg.setBorderPainted(false);
 
-        btn1.setText("jButton1");
-        btn1.addActionListener(new java.awt.event.ActionListener() {
+        btn.setText("+");
+        btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn1ActionPerformed(evt);
+                btnActionPerformed(evt);
             }
         });
 
@@ -86,25 +80,26 @@ public class login1 extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(357, Short.MAX_VALUE)
-                .addComponent(text_field, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(121, 121, 121))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(229, 229, 229)
-                .addComponent(btn1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(340, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(prg, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(68, 68, 68))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(btn)
+                        .addGap(196, 196, 196))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(btn1)
-                .addGap(50, 50, 50)
-                .addComponent(text_field, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addGap(201, 201, 201)
+                .addComponent(prg, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(btn)
+                .addContainerGap(227, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 411));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -112,21 +107,24 @@ public class login1 extends javax.swing.JFrame {
     
     
     
-    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        
-        String st = text_field.getText();
-        side_panel.setVisible(true); 
-        
-        
-        
-    }//GEN-LAST:event_btn1ActionPerformed
-
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         side_panel.setVisible(false); 
         
+        prg.setBackground(Color.red);
+ 
         // hello bro
         
     }//GEN-LAST:event_formWindowOpened
+
+    
+    int val = 0;
+    
+    
+    
+    private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
+        val = val+5;
+        prg.setValue(val);
+    }//GEN-LAST:event_btnActionPerformed
 
     
     
@@ -179,9 +177,9 @@ public class login1 extends javax.swing.JFrame {
  
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JProgressBar prg;
     private javax.swing.JPanel side_panel;
-    private javax.swing.JTextField text_field;
     // End of variables declaration//GEN-END:variables
 }
