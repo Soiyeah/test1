@@ -14,22 +14,7 @@ import java.awt.Color;
 public class login1 extends javax.swing.JFrame {
 
 
-// hello brotherrr this is in github
 
-  
-    
-    //gghhh
-    
-    //2
-    
-    //3
-    
-    //4
-    
-    //5
-    
-    //6
-    
     /**
      * Creates new form login1
      */
